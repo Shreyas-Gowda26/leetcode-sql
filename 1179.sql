@@ -15,8 +15,7 @@ sum(if(month='Dec',revenue,null)) as Dec_Revenue
 from Department 
 GROUP BY id;
 
-
-
+2nd approach
 SELECT
     id,
     MAX(CASE WHEN month = 'Jan' THEN revenue END) AS Jan_Revenue,
